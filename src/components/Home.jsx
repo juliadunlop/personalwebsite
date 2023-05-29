@@ -1,8 +1,8 @@
 import React from "react";
 
 function Home() {
-    return <div>
-        <h1>Hello</h1>
+    return <div className="box">
+        <h1 className="section">Hello</h1>
     </div>
 }
 

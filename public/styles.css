@@ -8,7 +8,7 @@
   --bolder-font: 900;
   --bg-color: #F3EFE0;
   --primary-color: #3D8361;
-  --secondary-color: #ff7235;
+  --secondary-color: #535151;
   --primary-shadow: #F3EFE0;
   --secondary-shadow: #F3EFE0;
   --bottom-margin: 0.5rem;
@@ -47,7 +47,7 @@ body {
 }
 
 nav {
-    position: sticky;
+    position:sticky;
     top: 0;
     left: 0;
     z-index: 1;
@@ -55,7 +55,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: ;
+    background-color: white;
     box-shadow: 0 3px 5px;
 }
 
@@ -66,10 +66,12 @@ nav h1 {
 nav a {
     color: var(--primary-color);
     transition: var(--transition);
+    text-decoration: underline;
   }
+
 nav a:hover {
     color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(grey);
   }
   
   nav ul {
@@ -79,6 +81,14 @@ nav a:hover {
   
   nav ul li {
     font-weight: var(--bold-font);
+  }
+
+  .about {
+    margin-right:25%;
+  }
+
+  .work {
+    margin-left:25%;
   }
 
   .burger-menu {
@@ -107,10 +117,8 @@ nav a:hover {
   .box {
     margin: auto;
     margin-top: 2rem;
-    width: 90%;
+    width: 40%;
     padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   }
   
   .box h1 {
@@ -120,8 +128,6 @@ nav a:hover {
   .box p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
   }
 
   .section {
@@ -129,9 +135,47 @@ nav a:hover {
     padding:1rem;
   }
 
+  .row {
+    display: flex;
+    height: 25rem;
+  }
+  
+  .column {
+    flex: 25%;
+  }
+
+  .left {
+    flex: 25%;
+    margin-left: 25%;
+  }
+
+  .column h2 {
+    color: var(--primary-color);
+  }
+
+  .column h3 {
+    color: var(--primary-color);
+  }
+
+  .column a{
+    color: black;
+    text-decoration: underline;
+  }
+
+  li {
+    list-style-type: circle;
+    margin-bottom: .5rem;
+  }
+
+  .projectbox {
+    margin: auto;
+    width: 75%;
+    height: 50rem;
+  }
+
   footer {
-    position: fixed;
-    background-color: var(--bg-color);
+    position: relative;
+    background-color: var(--primary-color);
     padding: 1.25rem;
     text-align: center;
     bottom: 0;
